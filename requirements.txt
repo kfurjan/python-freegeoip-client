@@ -1,0 +1,10 @@
+# HTTP requests
+requests==2.27.1
+
+# code formating
+flake8==4.0.1
+black==22.1.0
+
+# unit testing
+pytest==7.0.1
+requests-mock==1.9.3
