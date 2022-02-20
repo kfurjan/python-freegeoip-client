@@ -8,7 +8,7 @@ def get_long_description():
 
 setup(
     name="freegeoip-client",
-    version="1.0.1",
+    version="1.0.2",
     description="FreeGeoIp's RESTful API client for Python",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",

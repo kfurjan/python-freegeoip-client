@@ -5,7 +5,7 @@ the current IP address that made the request or for the provided IP address.
 
 ## Installing and usage
 
-Install using pip
+Install using pip (available at [pypi - freegeoip-client](https://pypi.org/project/freegeoip-client/))
 
 ```bash
 pip install freegeoip-client
