@@ -8,15 +8,16 @@ def get_long_description():
 
 setup(
     name="freegeoip-client",
-    version="1.0.0",
+    version="1.0.1",
     description="FreeGeoIp's RESTful API client for Python",
     long_description=get_long_description(),
+    long_description_content_type="text/markdown",
     author="Kevin Furjan",
     author_email="kfurjan@gmail.com",
     url="https://github.com/kfurjan/python-freegeoip-client",
     project_urls={
-        'GitHub Project': 'https://github.com/kfurjan/python-freegeoip-client',
-        'Issue Tracker': 'https://github.com/kfurjan/python-freegeoip-client/issues'
+        "GitHub Project": "https://github.com/kfurjan/python-freegeoip-client",
+        "Issue Tracker": "https://github.com/kfurjan/python-freegeoip-client/issues",
     },
     packages=find_packages(
         include=["freegeoip_client", "freegeoip_client.*"],
