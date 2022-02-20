@@ -19,7 +19,7 @@ from freegeoip_client import FreeGeoIpClient
 client = FreeGeoIpClient(api_key="some API key")
 
 geo_data = client.get_geo_location()
-geo_data_by_ip = client.get_geo_location_by_ip_address("8.8.8.8")
+geo_data_by_ip = client.get_geo_location_for_ip_address("8.8.8.8")
 ```
 
 ## Building project locally

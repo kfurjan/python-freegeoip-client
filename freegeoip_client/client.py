@@ -20,7 +20,7 @@ class FreeGeoIpClient:
     -------
     get_geo_location():
         Returns geo data for current location based on IP address that made the request.
-    get_geo_location_by_ip_address(ip_address):
+    get_geo_location_for_ip_address(ip_address):
         Returns geo data for location based on provided IP address.
     """
 
@@ -82,7 +82,7 @@ class FreeGeoIpClient:
         """
         return requests.get(f"{self.api_endpoint}/?apikey={self.api_key}").json()
 
-    def get_geo_location_by_ip_address(
+    def get_geo_location_for_ip_address(
         self,
         ip_address: str,
     ) -> Dict[str, Any]:

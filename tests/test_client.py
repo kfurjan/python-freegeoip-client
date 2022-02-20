@@ -13,5 +13,5 @@ def test_geo_data_output_for_ip_address(client, geo_data_for_ip_address):
         mock.get(
             f"{client.get_api_endpoint}/8.8.8.8?apikey=", json=geo_data_for_ip_address
         )
-        response = client.get_geo_location_by_ip_address("8.8.8.8")
+        response = client.get_geo_location_for_ip_address("8.8.8.8")
         assert response == geo_data_for_ip_address
