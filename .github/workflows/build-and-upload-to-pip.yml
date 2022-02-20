@@ -20,13 +20,13 @@ jobs:
       - name: "Installs dependencies"
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install setuptools wheel twine
+          python3 -m pip install setuptools wheel twine flake8
 
       # Lint
       - name: Lint with flake8
         run: |
-          flake8 freegeoip_client/
-          flake8 tests/
+          python3 -m flake8 freegeoip_client/
+          python3 -m flake8 tests/
       
       # Run unit tests
       - name: Test with pytest
