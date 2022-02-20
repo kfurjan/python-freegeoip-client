@@ -22,6 +22,15 @@ geo_data = client.get_geo_location()
 geo_data_by_ip = client.get_geo_location_for_ip_address("8.8.8.8")
 ```
 
+Example output
+
+```python
+>>> from freegeoip_client import FreeGeoIpClient
+>>> client = FreeGeoIpClient(api_key="4e5bac60-8fd5-11ec-bf44-17cf03f2ab06")
+>>> client.get_geo_location_for_ip_address("8.8.8.8")
+{'ip': '8.8.8.8', 'country_code': 'US', 'country_name': 'United States', 'region_code': '', 'region_name': '', 'city': '', 'zip_code': '', 'time_zone': 'America/Chicago', 'latitude': 37.751, 'longitude': -97.822, 'metro_code': 0}
+```
+
 ## Building project locally
 
 Using [pip - Package Installer for Python](https://pip.pypa.io/en/stable/) and `setup.py`, `__init__.py` files to define which modules will be included in a package, project can be built and installed locally in order to import it in another Python script.
