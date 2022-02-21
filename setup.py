@@ -8,7 +8,7 @@ def get_long_description():
 
 setup(
     name="freegeoip-client",
-    version="1.0.3",
+    version="1.0.4",
     description="FreeGeoIp's RESTful API client for Python",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
@@ -26,15 +26,15 @@ setup(
         "freegeoip_client": ["data/*.cfg"],
     },
     install_requires=[
-        "requests>=2.27.1",
+        "requests==2.27.1",
     ],
     setup_requires=[
         "pytest-runner",
-        "flake8",
+        "flake8==4.0.1",
     ],
     tests_require=[
-        "pytest",
-        "requests-mock",
+        "pytest==7.0.1",
+        "requests-mock==1.9.3",
     ],
     python_requires=">=3.6",
     classifiers=[
