@@ -16,7 +16,7 @@ Use it in code
 ```python
 from freegeoip_client import FreeGeoIpClient
 
-client = FreeGeoIpClient(api_key="some API key")
+client = FreeGeoIpClient(api_key="some_api_key")
 
 geo_data = client.get_geo_location()
 geo_data_by_ip = client.get_geo_location_for_ip_address("8.8.8.8")
@@ -26,7 +26,7 @@ Example output
 
 ```python
 >>> from freegeoip_client import FreeGeoIpClient
->>> client = FreeGeoIpClient(api_key="api key")
+>>> client = FreeGeoIpClient(api_key="some_api_key")
 >>> client.get_geo_location_for_ip_address("8.8.8.8")
 {'ip': '8.8.8.8', 'country_code': 'US', 'country_name': 'United States', 'region_code': '', 'region_name': '', 'city': '', 'zip_code': '', 'time_zone': 'America/Chicago', 'latitude': 37.751, 'longitude': -97.822, 'metro_code': 0}
 ```
